@@ -93,10 +93,11 @@ PageBase* PageManager::FindPageInStack(const char* name)
 }
 
 /**
-  * @brief  Install the page, and register the page to the page pool
+  * @brief  Install the page, and register the page to the page pool 安装页面，并将页面注册到页面池
   * @param  className: The class name of the page
   * @param  appName: Page application name, no duplicates allowed
   * @retval Return true if successful
+  * @example  manager.Install("Startup",     "Pages/Startup");
   */
 bool PageManager::Install(const char* className, const char* appName)
 {

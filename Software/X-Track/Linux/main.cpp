@@ -15,10 +15,10 @@
 extern "C" {
     LV_IMG_DECLARE(mouse_cursor_icon); /*Declare the image file.*/
 }
-
+//初始化HAL库
 static void hal_init(const char* evdev_path)
 {
-    /*Linux frame buffer device init*/
+    /*Linux frame buffer device init 初始化系统的FrameBuffer显示驱动*/
     fbdev_init();
 
     uint32_t width, height;
@@ -61,7 +61,7 @@ static void hal_init(const char* evdev_path)
     lv_indev_set_cursor(indev, cursor_obj);             /*Connect the image  object to the driver*/
 }
 
-int main(int argc, const char* argv[])
+int main(int argc, const char* argv[])      //X-Track程序入口
 {
     if(argc != 2)
     {

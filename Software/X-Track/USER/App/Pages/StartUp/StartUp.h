@@ -7,7 +7,7 @@
 namespace Page
 {
 
-class Startup : public PageBase
+class Startup : public PageBase             //初始界面
 {
 public:
 

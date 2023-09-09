@@ -102,7 +102,7 @@ void App_Init()
 
     manager.SetGlobalLoadAnimType(PageManager::LOAD_ANIM_OVER_TOP);
 
-    manager.Push("Pages/Startup");
+    manager.Push("Pages/Startup");          //显示Startup界面
 }
 
 void App_Uninit()
